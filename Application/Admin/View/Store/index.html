@@ -1,0 +1,42 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+
+<include file="./Component/_search" addpath="{:U('Store/add')}"/>
+
+<div class="col-xs-12">
+    <div class="animated fadeInUp">
+        <volist name="storeList" id="store" empty="暂无门店信息">
+             <div class="list-group">
+              <div  class="list-group-item title">
+                
+                <span class="text-primary">
+                  <i class="fa fa-home"></i>
+                  {$store.name}
+                </span>
+
+                <include file="./Component/_godetail" detailpath="{:U('Store/detail')}?id={$store.id}"/>
+
+              </div>
+              <div class="list-group-item">
+                  所在地址：{$store.address|default='未指定'}
+              </div>
+              <div class="list-group-item">
+                  店长姓名：
+                  <if condition="$store.admin_id neq ''">
+                    <a href="{:U('admin/detail')}?id={$store.admin_id}"  class="text-danger tooltip-title" data-toggle="tooltip" data-placement="right" title="点击查看店长详情">{$store.admin_realname}</a>
+                  <else/>
+                    未指定
+                  </if>
+              </div>
+              <div class="list-group-item">
+                  店长电话：{$store.admin_phone|default='未指定'}
+              </div>
+            </div>
+         </volist>
+    </div>
+</div>
+</block>
+<block name="script">
+</block>

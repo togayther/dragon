@@ -1,0 +1,87 @@
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="{:U('Index/index')}" class="navbar-brand">
+                {$Think.config.LOGO_TEXT}
+            </a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <volist name="adminMenu" id="menu">
+                    <if condition="count($menu['SUBS']) gt 0 ">
+                        <li class="dropdown">
+                            <if condition="count($menu['SUBS']) eq 0">
+                                <a href="{$menu['URL']}"> 
+                                    <if condition="$menu['ICON'] neq ''">
+                                        <i class="fa {$menu['ICON']} fa-fw"></i>
+                                    </if> 
+                                    {$menu['NAME']}
+                                </a>
+                            <else />
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <if condition="$menu['ICON'] neq ''">
+                                        <i class="fa {$menu['ICON']} fa-fw"></i>
+                                    </if> 
+                                    {$menu['NAME']}
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <foreach name="menu['SUBS']" item="submenu" >
+                                        <li>
+                                            <a href="{$submenu['URL']}"> 
+                                                <if condition="$menu['ICON'] neq ''">
+                                                    <i class="fa {$menu['ICON']} fa-fw"></i>
+                                                </if> 
+                                                {$submenu['NAME']}
+                                            </a>
+                                        </li>
+                                    </foreach>
+                                </ul>
+                            </if>
+                        </li>
+                    <else /> 
+                        <li>
+                            <a href="{$menu['URL']}">
+                                <if condition="$menu['ICON'] neq ''">
+                                    <i class="fa {$menu['ICON']} fa-fw"></i>
+                                </if> 
+                                {$menu['NAME']}
+                            </a>
+                        </li>
+                    </if>
+                </volist>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <if condition="$session_admin.store_name neq ''">
+                   <li>
+                        <a href="{:U('Store/detail_store')}?id={$session_admin.id}">
+                            {$session_admin.store_name}
+                        </a>
+                    </li>     
+                </if>
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">
+                      {$session_admin.realname}<span class="caret"></span></a>
+                    <ul class="dropdown-menu" aria-labelledby="download">
+                        <li>
+                          <a href="{:U('Admin/detail')}?id={$session_admin.id}">
+                            个人信息
+                          </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                          <a href="{:U('Auth/logout')}">
+                            注销
+                          </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

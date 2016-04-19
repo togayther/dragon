@@ -1,0 +1,83 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+
+<div class="col-xs-12">
+	
+<div class="animated fadeInUp">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="text-danger">
+		         <i class="fa fa-mobile"></i>
+                &nbsp;
+                {$userInfo.phone}
+                <span class="badge">{$userInfo.point}积分</span>
+                 &nbsp;
+		        <include file="./Component/_return" />
+		    </h4>
+            
+        </div>
+        <div class="panel-body">
+            <form data-validation="true" enctype="multipart/form-data" method="POST" action="{:U('User/point')}">
+                <if condition="$error neq ''">
+                    <div class="alert alert-danger">
+                        {$error}
+                    </div>
+                </if>
+                <input type="hidden" id="userid" name="userid" value="{$userInfo.id}"/>
+                <input type="hidden" id="manager" name="manager" value="{$session_admin.id}"/>
+
+                <div class="form-group">
+                    <label for="">操作积分值</label>
+
+                    <input type="text" check-type="required" required-message="请输入积分值" value="{$userPointInfo.point}" class="form-control" id="point" name="point" placeholder="请输入积分值...">
+
+                    <p class="help-block">
+                        注：此处的积分值为用户实际增减的积分值，可输入正值或负值，如100，-100等。
+                    </p>
+                </div>
+				
+				 <div class="form-group">
+                    <label for="">操作说明</label>
+                    <volist name="pointType" id="type">
+                        <div class="radio">
+                            <label>
+                                <if condition="$i eq 1">
+                                    <input type="radio" name="type" id="type" value="{$type}" checked>{$type}
+                                <else/>
+                                    <input type="radio" name="type" id="type" value="{$type}">{$type}
+                                </if>
+                                
+                            </label>
+                        </div>
+                    </volist>
+                </div>
+
+                <div class="form-group">
+                	<label for="">积分值附件</label>
+					<input type="file" accept="image/*" class="form-control" name="attach1" id="attach1"/>
+                    <div class="blank10"></div>
+                    <input type="file" accept="image/*" class="form-control" name="attach2" id="attach2"/>
+                    <div class="blank10"></div>
+                    <input type="file" accept="image/*" class="form-control" name="attach3" id="attach3"/>
+
+                    <p class="help-block">
+                        注：最多支持上传三张附件图片
+                    </p>
+				</div>
+				 <div class="form-group">
+                	<label for="">备注信息</label>
+					<textarea class="form-control" id="descr" name="descr" placeholder="" rows="3"></textarea>
+				</div>
+
+                <button type="submit" class="btn btn-success btn-submit">提交</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+</block>
+<block name="script">
+</block>

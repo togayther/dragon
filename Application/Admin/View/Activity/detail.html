@@ -1,0 +1,121 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+
+<div class="col-xs-12">
+  
+<div class="animated fadeInUp">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="text-danger">
+                <i class="fa fa-tag"></i>&nbsp;活动详情
+                </a>
+                <include file="./Component/_return" />
+            </h4>
+        </div>
+        <div class="panel-body">
+             <form data-validation="true" method="POST" action="{:U('Activity/detail')}">
+                <if condition="$error neq ''">
+                    <div class="alert alert-danger">
+                        {$error}
+                    </div>
+                </if>
+                <input type="hidden" id="id" name="id" value="{$activityInfo.id}"/>
+                <div class="form-group">
+                    <label for="">活动名称</label>
+                    <input maxlength="30" type="text" check-type="required" required-message="请输入活动名称" value="{$activityInfo.name}" class="form-control" id="name" name="name" placeholder="请输入活动名称...">
+                </div>
+                <div class="form-group">
+                    <label for="">活动门店</label>
+                    <select name="storeid" id="storeid" class="form-control">
+                      <option value="-1">所有门店</option>
+                      <volist name="storeList" id="store">
+                          <if condition="$store.id eq $activityInfo['storeid']">
+                              <option value="{$store.id}" selected>
+                          <else/>
+                              <option value="{$store.id}">
+                          </if>
+                              {$store.name}
+                          </option>
+                      </volist>
+                    </select>
+                    <p class="help-block">注：活动将在指定的门店开展</p>
+                </div>
+                <div class="form-group">
+                    <label for="">积分要求</label>
+                     <div class="list-group-item">
+                        <div class="rangeSelector" id="point-selector"
+                          data-type="single"
+                          data-disable="false" 
+                          data-max="{$Think.config.LEVEL_MAX_POINT}"
+                          data-min="-0"
+                          data-step="10"
+                          data-grid="true"
+                          data-postfix="分"
+                          data-from="{$activityInfo.point|default=0}"></div>
+                     </div>
+                     <p class="help-block">注：积分大小此值的用户方可参与此活动</p>
+                     <input type="hidden" value="{$activityInfo.point|default=0}" id="point-selector-from" name="point">
+                </div>
+                <div class="form-group">
+                    <label for="">活动时间</label>
+                    <div class="list-group-item">
+                      <div class="dateRangeSelector" id="date-selector"
+                        data-active = "1"
+                        data-fromVal="{$activityInfo.startdate}"  
+                        data-toVal="{$activityInfo.enddate}">
+                      </div>
+                    </div>
+                    <p class="help-block">注：活动将在选择的时间范围内开展</p>
+                    <input type="hidden" value="{$activityInfo.startdate}" id="date-selector-from" name="startdate">
+                    <input type="hidden" value="{$activityInfo.enddate}" id="date-selector-to" name="enddate">
+                </div>
+                <div class="form-group">
+                    <label for="">
+                      活动头图&nbsp;
+                      <a href="{:U('Image/index')}" target="_blank" class="text-danger">
+                        <i class="fa fa-arrow-circle-right"></i>&nbsp;点击进入图片上传服务
+                      </a>
+                    </label>
+                    <input type="text" class="form-control" value="{$activityInfo.pic}" id="pic" name="pic">
+                    <p class="help-block">
+                      注：请粘贴网络图片地址。此头图将在前端进行展示，推荐宽高：720*320
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label for="">详细说明</label>
+                    <textarea class="form-control richEditor" style="height:200px;" id="content" name="content">
+                    {$activityInfo.content}
+                    </textarea>
+                    <p class="help-block">
+                      注：详细说明将在前端进行展示，用于向用户说明活动的详细情况
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label for="">备注信息</label>
+                    <textarea class="form-control" id="descr" name="descr" placeholder="请输入备注信息" rows="3">{$activityInfo.descr}</textarea>
+                </div>
+                <div class="form-group">
+                   <if condition="$activityInfo.istop eq '1' ">
+                       <input type="checkbox" id="istop"  checked/>
+                    <else/>
+                       <input type="checkbox" id="istop">
+                    </if>
+                    <input type="hidden" name="istop" value="{$activityInfo.istop}">
+                    
+                    <label for="istop">是否置顶</label>
+                    <p class="help-block">
+                      注：置顶活动将始终在列表顶部显示
+                    </p>
+                </div>
+                <button type="submit" class="btn btn-success">修改</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+</block>
+<block name="script">
+</block>

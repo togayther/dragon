@@ -1,0 +1,87 @@
+<extend name="./Component/_master" />
+<block name="title">
+    个人中心
+</block>
+<block name="style">
+</block>
+<block name="body">
+    <div class="animated">
+        <div class="header">
+            <div class="userinfo">
+                <div class="point">
+                    <p>我的积分</p>
+                    <p>{$userInfo.point}</p>
+                </div>
+                <div class="base">
+                    <p>{$userInfo.phone}</p>
+                    <span class="badge">{$userInfo.level_name|default='普通会员'}</span>
+                </div>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="{:U('record/index')}?tab=shouru">
+                        今日积分&nbsp;<span class="text-danger" id="lblTodayPoint">{$todayPoint}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{:U('record/index')}">
+                        积分明细
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!--
+            <a class="help" href="{:U('index/help')}">
+                <i class="iconfont icon-help"></i>
+            </a>
+            -->
+        </div>
+    
+        <notempty  name="todayActivity">
+            <div class="list-group">
+                <volist name="todayActivity" id="activityInfo" offset="0" length='1'>
+                    <a href="{:U('activity/index')}" class="list-group-item">
+                       <div class="item-pic">
+                            <img src="__PUBLIC__/home/img/hd.png" class="item-pic"/>
+                        </div>
+                        <div class="item-content" >
+                            <h5 class="list-group-item-heading">
+                                <label class="text-danger">
+                                    {$activityInfo.name}
+                                </label>
+                            </h5>
+                            <p class="list-group-item-text">
+                                {$activityInfo.descr}
+                            </p>
+                        </div>
+                        <div class="item-op">
+                            <i class="iconfont icon-arrow-right"></i>
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
+                </volist>
+            </div>
+        </notempty>
+
+		<div class="container">
+	        <div class="row">
+	        	<div class="col-xs-6">
+	        		<a href="{:U('level/index')}" class="btn btn-block btn-bordered">
+                        <i class="iconfont icon-attention"></i>
+                        会员等级制度
+                    </a>
+	        	</div>
+	        	<div class="col-xs-6">
+	        		<a href="tel:13540312451" class="btn btn-block btn-bordered">
+                        <i class="iconfont icon-mobile"></i>
+                        联系我们
+                    </a>
+	        	</div>
+	        </div>
+        </div>
+    </div>
+</block>
+<block name="script">
+</block>

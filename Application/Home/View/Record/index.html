@@ -1,0 +1,77 @@
+<extend name="./Component/_master" />
+<block name="title">
+积分明细
+</block>
+<block name="style">
+    <style type="text/css">
+        body{
+            background-color: #fff;
+        }
+    </style>
+</block>
+<block name="body">
+<div class="animated">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#income" data-toggle="tab">
+            收入明细
+            </a>
+        </li>
+        <li>
+            <a href="#consume" data-toggle="tab">
+            兑换记录
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="income">
+            <empty name="incomePointList">
+                <div class="data-empty">
+                  暂无收入记录
+                </div>
+            <else />    
+                <ul class="list-group record-list">
+                    <volist name="incomePointList" id="incomePoint">
+                        <li class="list-group-item">
+                            <h5>
+                                {$incomePoint.type}
+                            </h5>
+                            <label class="text-danger">
+                                +{$incomePoint.point}
+                            </label>
+                            <span>
+                                {$incomePoint.createdate}
+                            </span>
+                        </li>
+                    </volist>
+                </ul>
+            </empty>
+        </div>
+         <div class="tab-pane" id="consume">
+            <empty name="comsumePointList">
+                <div class="data-empty">
+                  暂无兑换记录
+                </div>
+            <else />    
+                <ul class="list-group record-list">
+                    <volist name="comsumePointList" id="consumePoint">
+                        <li class="list-group-item">
+                            <h5>
+                                {$consumePoint.type}
+                            </h5>
+                            <label class="text-danger">
+                                {$consumePoint.point}
+                            </label>
+                            <span>
+                                {$consumePoint.createdate}
+                            </span>
+                        </li>
+                    </volist>
+                </ul>
+            </empty>
+        </div>
+    </div>
+</div>
+</block>
+<block name="script">
+</block>

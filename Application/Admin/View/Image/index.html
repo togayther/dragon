@@ -1,0 +1,43 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+<div class="col-xs-12">
+    <div class="animated fadeInUp">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="text-danger">
+                    <i class="fa fa-image"></i>&nbsp;图片列表
+                    <div class="pull-right">
+                        <a href="{:U('Image/upload')}" class="tooltip-title" data-toggle="tooltip" data-placement="left" title="上传图片">
+                        <i class="fa fa-arrow-circle-up"></i>
+                        </a>
+                    </div>
+                </h4>
+            </div>
+            <div class="panel-body">
+                <volist name="imageList" id="image">
+                    <div class="col-xs-2 thumbnailItem">
+                            <a href="{$image}" class="thumbnail" title="点击打开" target="_blank" > 
+                            <if condition="$i gt 18">
+                                <img data-original="{$image}" alt="" class="lazy"  style="height:120px;"/>
+                            <else/>
+                                <img src="{$image}" alt="" class="lazy"  style="height:120px;"/>
+                            </if>
+                            </a>
+                            <input type="text" class="form-control" value="{$image}"/>
+                            
+                            <a class="btnImageRemove" data-name="{$image}">
+                                <i class="fa fa-remove fa-lg"></i>
+                            </a>
+                            <div class="blank20"></div>
+                    </div>
+                </volist>
+                <input type="hidden" value="{:U('Image/delete')}" id="hiddenImageDeleteApi"/>
+            </div>
+        </div>
+    </div>
+</div>
+</block>
+<block name="script">
+</block>

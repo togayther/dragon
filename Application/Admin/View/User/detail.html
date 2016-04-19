@@ -1,0 +1,62 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+
+<div class="col-xs-12">
+	
+<div class="animated fadeInUp">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="text-danger">
+                <i class="fa fa-mobile"></i>
+                &nbsp;
+                {$userInfo.phone}
+                 &nbsp;
+                <a href="{:U('Point/user')}?id={$userInfo.id}" class=" tooltip-title" data-toggle="tooltip" data-placement="right" title="点击查看积分详情">
+                    <span class="badge">{$userInfo.point}积分</span>
+                </a>
+                <include file="./Component/_return" />
+            </h4>
+        </div>
+        <div class="panel-body">
+            <form data-validation="true" method="POST" action="{:U('User/detail')}">
+                <if condition="$error neq ''">
+                    <div class="alert alert-danger">
+                        {$error}
+                    </div>
+                </if>
+                <input type="hidden" id="id" name="id" value="{$userInfo.id}"/>
+                <input type="hidden" id="phone" name="phone" value="{$userInfo.phone}"/>
+                <input type="hidden" id="openid" name="openid" value="{$userInfo.openid}"/>
+
+                <div class="form-group">
+                    <label for="">会员等级</label>
+                    <input type="text" class="form-control" disabled value="{$userInfo.level_name}">
+                </div>
+                <div class="form-group">
+                    <label for="">注册时间</label>
+                    <input type="text" class="form-control" disabled value="{$userInfo.createdate}">
+                </div>
+                <div class="form-group">
+                    <label for="">最近登录</label>
+                    <input type="text" class="form-control" disabled value="{$userInfo.lastlogin}">
+                </div>
+                 <div class="form-group">
+                    <label for="">微信编号</label>
+                    <input type="text" class="form-control" disabled value="{$userInfo.openid}">
+                </div>
+                <div class="form-group">
+                    <label for="">备注信息</label>
+                    <textarea class="form-control" id="descr" name="descr" placeholder="" rows="3">{$userInfo.descr}</textarea>
+                </div>
+                <button type="submit" class="btn btn-success">修改</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+</block>
+<block name="script">
+</block>

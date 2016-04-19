@@ -1,0 +1,1157 @@
+[ 2015-11-02T09:47:48+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T09:48:46+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:51:22+08:00 ] 127.0.0.1 /qzh/Admin/Auth/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:51:24+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0060s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'kangming' AND admin.password = 'kangming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 09:51:24' WHERE admin.name = 'kangming' AND admin.password = 'kangming' [ RunTime:0.1380s ]
+
+[ 2015-11-02T09:51:24+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:51:30+08:00 ] 127.0.0.1 /qzh/Admin/Audit/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:52:50+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:53:30+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:53:54+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026001s ]
+
+[ 2015-11-02T09:53:59+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:54:06+08:00 ] 127.0.0.1 /qzh/admin/audit/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:54:08+08:00 ] 127.0.0.1 /qzh/admin/activity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:54:11+08:00 ] 127.0.0.1 /qzh/admin/admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T09:54:12+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:54:19+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:54:37+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:54:40+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:54:42+08:00 ] 127.0.0.1 /qzh/Admin/Auth/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:54:44+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0110s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'kangming' AND admin.password = 'kangming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 09:54:43' WHERE admin.name = 'kangming' AND admin.password = 'kangming' [ RunTime:0.0740s ]
+
+[ 2015-11-02T09:54:44+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:54:47+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:55:18+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:55:59+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:56:06+08:00 ] 127.0.0.1 /qzh/Admin/User/Point.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:56:27+08:00 ] 127.0.0.1 /qzh/Admin/Admin/detail.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:56:43+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:56:56+08:00 ] 127.0.0.1 /qzh/Admin/Auth/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:57:03+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0080s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'admin' AND admin.password = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 09:57:03' WHERE admin.name = 'admin' AND admin.password = 'admin' [ RunTime:0.0750s ]
+
+[ 2015-11-02T09:57:03+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:57:07+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:57:09+08:00 ] 127.0.0.1 /qzh/admin/store/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+
+[ 2015-11-02T09:57:14+08:00 ] 127.0.0.1 /qzh/Admin/Admin/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:57:24+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T09:57:28+08:00 ] 127.0.0.1 /qzh/admin/level/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:57:29+08:00 ] 127.0.0.1 /qzh/admin/admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:57:30+08:00 ] 127.0.0.1 /qzh/admin/activity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:57:36+08:00 ] 127.0.0.1 /qzh/admin/audit/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:57:39+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:57:41+08:00 ] 127.0.0.1 /qzh/admin/activity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:57:57+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:58:00+08:00 ] 127.0.0.1 /qzh/admin/activity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:58:01+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:58:10+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:59:01+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:59:09+08:00 ] 127.0.0.1 /qzh/Admin/Auth/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T09:59:16+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0090s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'kangming' AND admin.password = 'kangming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 09:59:15' WHERE admin.name = 'kangming' AND admin.password = 'kangming' [ RunTime:0.0600s ]
+
+[ 2015-11-02T09:59:16+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:59:34+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T09:59:57+08:00 ] 127.0.0.1 /qzh/Admin/Admin/detail.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:00:11+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:00:22+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:00:36+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:00:50+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:01:21+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:02:39+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:02:55+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:03:28+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+
+[ 2015-11-02T10:03:37+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:03:54+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:04:15+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:04:23+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:21:36+08:00 ] 127.0.0.1 /qzh/Admin/Auth/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:21:37+08:00 ] 127.0.0.1 /qzh/Admin/Auth/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:21:39+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0110s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'kangming' AND admin.password = 'kangming' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 10:21:39' WHERE admin.name = 'kangming' AND admin.password = 'kangming' [ RunTime:0.0680s ]
+
+[ 2015-11-02T10:21:39+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T10:21:39+08:00 ] 127.0.0.1 /qzh/Admin/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:25:18+08:00 ] 127.0.0.1 /qzh/Admin/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:25:21+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0120s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'kangming' AND admin.password = 'kangming' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 10:25:20' WHERE admin.name = 'kangming' AND admin.password = 'kangming' [ RunTime:0.2910s ]
+
+[ 2015-11-02T10:25:21+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:26:32+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:26:32+08:00 ] 127.0.0.1 /qzh/Admin/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:26:34+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0100s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'kangming' AND admin.password = 'kangming' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 10:26:34' WHERE admin.name = 'kangming' AND admin.password = 'kangming' [ RunTime:0.0750s ]
+
+[ 2015-11-02T10:26:35+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-02T10:26:37+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:26:37+08:00 ] 127.0.0.1 /qzh/Admin/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:34:36+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0140s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'kangming' AND admin.password = 'kangming' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 10:34:36' WHERE admin.name = 'kangming' AND admin.password = 'kangming' [ RunTime:0.0720s ]
+
+[ 2015-11-02T10:34:37+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-02T10:34:39+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:34:50+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:34:52+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:36:45+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:37:09+08:00 ] 127.0.0.1 /qzh/Admin/Auth/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:37:11+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0070s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'admin' AND admin.password = 'admin' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 10:37:11' WHERE admin.name = 'admin' AND admin.password = 'admin' [ RunTime:0.0850s ]
+
+[ 2015-11-02T10:37:12+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:37:50+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T10:40:14+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:40:24+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:40:32+08:00 ] 127.0.0.1 /qzh/Admin/Admin/detail.html?id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:40:55+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:40:58+08:00 ] 127.0.0.1 /qzh/Admin/Admin/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-02T10:41:50+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:41:58+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:42:49+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T10:43:01+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:43:06+08:00 ] 127.0.0.1 /qzh/Admin/Auth/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:43:12+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0080s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'kangming' AND admin.password = 'kangming' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 10:43:12' WHERE admin.name = 'kangming' AND admin.password = 'kangming' [ RunTime:0.2090s ]
+
+[ 2015-11-02T10:43:12+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:43:16+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:45:09+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T10:45:12+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:47:53+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:48:50+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:49:13+08:00 ] 127.0.0.1 /qzh/Admin/User/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:49:16+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T10:49:18+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:50:06+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-02T10:50:28+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:50:43+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-11-02T10:51:27+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:52:03+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:52:08+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:52:17+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:52:19+08:00 ] 127.0.0.1 /qzh/Admin/User/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:52:48+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:53:06+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:53:10+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:53:28+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:53:35+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:54:19+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:54:35+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:54:57+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:55:00+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:55:03+08:00 ] 127.0.0.1 /qzh/admin/image/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-02T10:55:09+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T10:56:25+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T10:57:05+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:01:51+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:02:57+08:00 ] 127.0.0.1 /qzh/admin/activity/store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:store
+
+[ 2015-11-02T11:03:15+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:03:17+08:00 ] 127.0.0.1 /qzh/admin/activity/index_store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:03:20+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:04:23+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:05:27+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-02T11:05:49+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:07:11+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T11:07:50+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:08:06+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T11:09:28+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:10:13+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:10:31+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:10:50+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:11:10+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:11:47+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:11:55+08:00 ] 127.0.0.1 /qzh/Admin/Activity/detail_store.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:11:59+08:00 ] 127.0.0.1 /qzh/admin/activity/index_store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:12:01+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:15:18+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:15:20+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-02T11:15:34+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:15:42+08:00 ] 127.0.0.1 /qzh/Admin/Admin/detail.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:16:00+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:16:09+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:16:11+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:17:06+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:17:42+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.012000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013000s ]
+
+[ 2015-11-02T11:17:45+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+
+[ 2015-11-02T11:17:47+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:17:54+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:17:55+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:17:58+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:17:59+08:00 ] 127.0.0.1 /qzh/admin/activity/index_store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:18:02+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:18:05+08:00 ] 127.0.0.1 /qzh/Admin/User/Point.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:18:24+08:00 ] 127.0.0.1 /qzh/Admin/Auth/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:18:31+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0100s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'admin' AND admin.password = 'admin' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 11:18:31' WHERE admin.name = 'admin' AND admin.password = 'admin' [ RunTime:0.0690s ]
+
+[ 2015-11-02T11:18:32+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:18:37+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:18:39+08:00 ] 127.0.0.1 /qzh/admin/audit/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:18:42+08:00 ] 127.0.0.1 /qzh/Admin/Admin/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:18:48+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:20:38+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:20:48+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-11-02T11:20:54+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:20:59+08:00 ] 127.0.0.1 /qzh/admin/store/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:21:03+08:00 ] 127.0.0.1 /qzh/Admin/Auth/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:21:13+08:00 ] 127.0.0.1 /qzh/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0080s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'kangming' AND admin.password = 'kangming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-02 11:21:13' WHERE admin.name = 'kangming' AND admin.password = 'kangming' [ RunTime:0.0800s ]
+
+[ 2015-11-02T11:21:14+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:21:42+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:21:51+08:00 ] 127.0.0.1 /qzh/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:22:03+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:22:06+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+
+[ 2015-11-02T11:22:10+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:40:52+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:41:26+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:42:39+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:43:02+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:43:09+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:43:11+08:00 ] 127.0.0.1 /qzh/admin/activity/index_store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:43:14+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-02T11:43:49+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:44:15+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:45:21+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:45:56+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:46:25+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T11:46:33+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:46:35+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-11-02T11:46:36+08:00 ] 127.0.0.1 /qzh/admin/activity/index_store.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T11:46:37+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:47:43+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:47:55+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:48:05+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:48:38+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:48:50+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:48:56+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:48:58+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:48:59+08:00 ] 127.0.0.1 /qzh/admin/image/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:49:02+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:49:26+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-11-02T11:49:46+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:49:49+08:00 ] 127.0.0.1 /qzh/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-11-02T11:50:12+08:00 ] 127.0.0.1 /qzh/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-11-02T11:50:17+08:00 ] 127.0.0.1 /qzh/Admin/Store/detail_store.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+

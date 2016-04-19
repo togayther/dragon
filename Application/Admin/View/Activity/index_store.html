@@ -1,0 +1,42 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+
+<div class="col-xs-12">
+    <div class="animated fadeInUp">
+        <volist name="activityList" id="activity" empty="暂无活动信息">
+          <div class="list-group">
+              <div class="list-group-item title">
+                <span class="text-primary">
+                  <i class="fa fa-tag"></i>
+                  {$activity.name}
+                </span>
+                <include file="./Component/_godetail" detailpath="{:U('Activity/detail_store')}?id={$activity.id}"/>
+              </div>
+              <div class="list-group-item">
+                <div class="dateRangeSelector" 
+                  data-fromVal="{$activity.startdate}"
+                  data-toVal="{$activity.enddate}"></div>
+              </div>
+              <div class="list-group-item">
+                  积分要求：
+                  <span class="badge">{$activity.point}</span>
+              </div>
+              <div class="list-group-item">
+                  活动门店：
+                  <if condition="$activity.store_name eq '' ">
+                    <span>所有门店</span>
+                  <else/>
+                    <span class="text-danger">
+                      {$activity.store_name}
+                    </span>
+                  </if>
+              </div>
+            </div>
+        </volist>
+    </div>
+</div>
+</block>
+<block name="script">
+</block>

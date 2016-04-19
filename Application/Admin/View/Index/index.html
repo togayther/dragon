@@ -1,0 +1,29 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+
+<div class="animated fadeInUp">
+	<div class="alert alert-success">
+		<p>
+			<i class="fa fa-check-circle"></i>
+			【{$session_admin.realname}】你好，欢迎来到&nbsp;{$Think.config.LOGO_TEXT}！上次登录时间：{$session_admin.lastlogin}。
+		</p>
+	</div>
+
+	<if condition="$session_admin.groupid eq 1 ">
+		<div class="alert alert-danger">
+			<p>
+				<i class="fa fa-check-circle"></i>&nbsp;
+				<if condition="$auditCount neq 0">
+					你有<span class="">【{$auditCount}】</span> 条待审批积分操作申请需要处理，<a href="{:U('Audit/index')}" class="text-danger">点击处理</a>
+				<else/>
+					当前暂无积分操作申请信息需要处理。
+				</if>
+			</p>
+		</div>
+	</if>
+</div>
+</block>
+<block name="script">
+</block>

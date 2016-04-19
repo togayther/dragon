@@ -1,0 +1,126 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+<div class="col-xs-12">
+    <div class="animated fadeInUp">
+        <div>
+            <ul class="nav nav-tabs" role="tablist">
+                <li>
+                    <a href="javascript:void(0);">
+                    <i class="fa fa-mobile"></i>
+                    &nbsp;
+                    {$auditInfo.user_phone}
+                    &nbsp;
+                    <span class="badge">{$auditInfo.point}积分</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#shenqing" data-toggle="tab">
+                    申请信息
+                    </a>
+                </li>
+                <li>
+                    <a href="#shenhe" data-toggle="tab">
+                    审核信息
+                    </a>
+                </li>
+                 <li class="pull-right">
+                     <a href="javascript:history.go(-1);" 
+                        class="tooltip-title" 
+                        data-toggle="tooltip" 
+                        data-placement="left" 
+                        title="返回">
+                        <i class="fa fa-mail-reply"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="shenqing">
+                    <div class="">
+                        <form>
+                            <div class="form-group">
+                                <label for="">积分值</label>
+                                <input type="text" class="form-control" disabled value="{$auditInfo.point}">
+                            </div>
+                            <div class="form-group">
+                                <label for="">积分类型</label>
+                                <input type="text" class="form-control" disabled value="{$auditInfo.type}">
+                            </div>
+                            <div class="form-group">
+                                <label for="">申请时间</label>
+                                <input type="text" class="form-control" disabled value="{$auditInfo.createdate}">
+                            </div>
+                            <div class="form-group">
+                                <label for="">申请附件</label>
+                                <div class="row">
+                                 <?php
+                                    $attachs = explodeAttach($auditInfo["attach"], '|');
+                                 ?>
+                        
+                                  <volist name="attachs" id="attach">
+                                     <div class="col-xs-6 col-md-2">
+                                        <a href="__PUBLIC__/{$attach}" class="thumbnail" target="_blank">
+                                          <img src="__PUBLIC__/{$attach}" alt="">
+                                        </a>
+                                      </div>
+                                  </volist>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    申请门店
+                                    <a href="{:U('Admin/detail')}?id={$auditInfo.store_id}"  class="tooltip-title" data-toggle="tooltip" data-placement="right" title="点击查看门店详情">
+                                    <i class="fa fa-info-circle"></i>
+                                    </a>
+                                </label>
+                                <input type="text" class="form-control" disabled value="{$auditInfo.store_name}">
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    申请店长
+                                    <a href="{:U('Admin/detail')}?id={$auditInfo.manager_id}"  class="tooltip-title" data-toggle="tooltip" data-placement="right" title="点击查看店长详情">
+                                    <i class="fa fa-info-circle"></i>
+                                    </a>
+                                </label>
+                                <input type="text" class="form-control" disabled value="{$auditInfo.manager_realname}">
+                            </div>
+                            <div class="form-group">
+                                <label for="">申请备注</label>
+                                <textarea class="form-control" id="" placeholder="" rows="3" disabled>{$auditInfo.descr}</textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="shenhe">
+                    <div class="padding-lg">
+                        <div class="form-group">
+                            <label for="">审核人员</label>
+                            <input type="text" class="form-control" disabled value="超级管理员">
+                        </div>
+                        <div class="form-group">
+                            <label for="">审核时间</label>
+                            <input type="text" class="form-control" disabled value="{$auditInfo.audit_time}">
+                        </div>
+                        <div class="form-group">
+                            <label for="">审核状态</label>
+                            <if condition="$auditInfo.audit_status eq '1' ">
+                                <input type="text" class="form-control" disabled value="通过">
+                            <else/>
+                                <input type="text" class="form-control" disabled value="不通过">
+                            </if>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="">审核备注</label>
+                            <textarea class="form-control" id="" placeholder="" rows="3" disabled>{$auditInfo.audit_descr}</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</block>
+<block name="script">
+</block>

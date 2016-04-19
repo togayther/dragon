@@ -1,0 +1,47 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+<div class="col-xs-12">
+    <div class="animated fadeInUp">
+        <div class="panel panel-default">
+           <div class="panel-heading">
+              <h4 class="text-danger">
+                <i class="fa fa-image"></i>&nbsp;图片上传
+                <div class="pull-right">
+                  <a href="{:U('Image/index')}" class="tooltip-title" data-toggle="tooltip" data-placement="left" title="返回">
+                  <i class="fa fa-mail-reply"></i>
+                  </a>
+              </div>
+              </h4>
+           </div>
+
+           <div class="panel-body">
+               <div class="alert alert-danger" role="alert">
+                    <button type="button" class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <p>1，图片文件类型支持 jpg, png, gif, bmp等；</p>
+                    <p>2，上传图片大小需要小于1M（1024KB）, 上传前请先进行压缩；</p>
+                </div>
+            
+                <form method="POST" action="{:U('Image/upload')}" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="file" accept="image/*" class="form-control" name="image" id="inputFileImage"/>
+                    </div>
+                    
+                    <div class="form-group">
+                        <a href="#" class="thumbnail hide" id="imagePreview"> 
+                            <img src="" alt=""/>
+                        </a>
+                    </div>
+                    <button type="submit" class="btn btn-success">上传</button>
+                    &nbsp;&nbsp;<span>{$msg}</span>
+                </form>
+
+           </div>
+        </div>
+    </div>
+</div>
+</block>
+<block name="script">
+</block>

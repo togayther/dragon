@@ -1,0 +1,72 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+
+<div class="col-xs-12">
+  
+<div class="animated fadeInUp">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="text-danger">
+                <i class="fa fa-tag"></i>&nbsp;{$activityInfo.name}
+                </a>
+                <include file="./Component/_return" />
+            </h4>
+        </div>
+        <div class="panel-body">
+             <form>
+                <div class="form-group">
+                    <label for="">积分要求</label>
+                     <div class="list-group-item">
+                        <div class="rangeSelector"
+                          data-type="single"
+                          data-disable="true" 
+                          data-max="5000"
+                          data-min="-0"
+                          data-step="10"
+                          data-grid="true"
+                          data-postfix="分"
+                          data-from="{$activityInfo.point|default=0}"></div>
+                     </div>
+                </div>
+                <div class="form-group">
+                    <label for="">活动时间</label>
+                    <div class="list-group-item">
+                      <div class="dateRangeSelector"
+                        data-fromVal="{$activityInfo.startdate}"  
+                        data-disable="true" 
+                        data-toVal="{$activityInfo.enddate}">
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">
+                      活动头图
+                    </label>
+                    <a href="{$activityInfo.pic}">
+                      <img src="{$activityInfo.pic}" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="form-group">
+                    <label for="">详细说明</label>
+                    <p>
+                      {$activityInfo.content|html_entity_decode}
+                    </p>
+                </div>
+                <div class="form-group">
+                    <label for="">备注信息</label>
+                    <p>
+                      {$activityInfo.descr}
+                    </p>
+                </div>
+                <a href="javascript:history.go(-1);" class="btn btn-success">返回</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+</block>
+<block name="script">
+</block>

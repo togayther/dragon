@@ -1,0 +1,3 @@
+<?php
+//000000000000a:3:{i:0;a:5:{s:4:"NAME";s:12:"用户管理";s:4:"ICON";s:0:"";s:3:"URL";s:29:"/wechat/admin/user/index.html";s:2:"ID";s:0:"";s:4:"SUBS";a:0:{}}i:1;a:5:{s:4:"NAME";s:12:"会员活动";s:4:"ICON";s:0:"";s:3:"URL";s:39:"/wechat/admin/activity/index_store.html";s:2:"ID";s:0:"";s:4:"SUBS";a:0:{}}i:2;a:5:{s:4:"NAME";s:0:"";s:4:"ICON";s:8:"fa-image";s:3:"URL";s:30:"/wechat/admin/image/index.html";s:2:"ID";s:0:"";s:4:"SUBS";a:0:{}}}
+?>

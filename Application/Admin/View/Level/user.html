@@ -1,0 +1,59 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+<div class="col-xs-12">
+	<div class="animated fadeInUp">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="text-danger">
+					{$levelInfo.name} 
+					<include file="./Component/_return" />
+				</h4>
+			</div>
+			<div class="panel-body">
+			<table class="table table-striped table-bordered" id="dataTable">
+				<thead>
+					<th>
+						手机号码
+					</th>
+					<th>
+						积分值
+					</th>
+					<th>
+						会员等级
+					</th>
+					<th>
+						绑定时间
+					</th>
+					<th>
+						最近登录
+					</th>
+					<th data-sort-enabled="false" data-search-enabled="false">
+						
+					</th>
+				</thead>
+				<tbody>
+					<volist name="userList" id="user">
+						<tr>
+							<td>{$user.phone}</td>
+							<td>{$user.point}</td>
+							<td>{$user.level_name}</td>
+							<td>{$user.createdate}</td>
+							<td>{$user.lastlogin}</td>
+							<td class="text-center">
+								<a href="{:U('User/Point')}?id={$user.id}" class="tooltip-title" data-toggle="tooltip" data-placement="left" title="积分添加">
+									<i class="fa fa-plus-circle"></i>
+								</a>
+							</td>
+						</tr>
+					</volist>
+				</tbody>
+			</table>
+			</div>
+		</div>
+	</div>
+</div>
+</block>
+<block name="script">
+</block>

@@ -1,0 +1,38 @@
+<extend name="./Component/_master" />
+<block name="title">
+    等级规则
+</block>
+<block name="style">
+</block>
+<block name="body">
+<div class="animated">
+
+    <empty name="levelList">
+        <div class="data-empty">
+          暂无等级信息
+        </div>
+    <else /> 
+        <volist name="levelList" id="levelInfo">
+            <div class="well well-level">
+                <div class="well-pic">
+                    <img src="{$levelInfo.pic}" alt="">
+                </div>
+                <div class="well-content">
+                    <h6 class="title">
+                        {$levelInfo.name}
+                    </h6>
+                    <p class="point">
+                        积分要求：<span class="text-danger">{$levelInfo.point_begin}</span>
+                    </p>
+                    <p class="descr">
+                        特权：{$levelInfo.descr}
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </volist>
+    </empty>
+</div>
+</block>
+<block name="script">
+</block>

@@ -1,0 +1,36 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+
+
+<include file="./Component/_search" addpath="{:U('Admin/add')}"/>
+
+
+<div class="col-xs-12">
+    <div class="animated fadeInUp">
+      
+         <volist name="adminList" id="admin" empty="暂无店长信息">
+             <div class="list-group">
+              <div  class="list-group-item title">
+                <span class="text-primary">
+                  <i class="fa fa-star"></i>
+                  {$admin.realname}
+                </span>
+
+                <include file="./Component/_godetail" detailpath="{:U('Admin/detail')}?id={$admin.id}"/>
+
+              </div>
+              <div class="list-group-item">
+                  所属门店：{$admin.store_name|default="未关联"}
+              </div>
+              <div class="list-group-item">
+                  联系电话：{$admin.phone}
+              </div>
+            </div>
+         </volist>
+    </div>
+</div>
+</block>
+<block name="script">
+</block>

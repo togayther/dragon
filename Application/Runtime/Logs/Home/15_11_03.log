@@ -1,0 +1,318 @@
+﻿[ 2015-11-03T12:11:47+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=fa7656e0cf70e84386730e9ae72fcb39d9c4972f&timestamp=1446523865&nonce=2024158970
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:11:47+08:00 ] 117.175.88.49 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+
+[ 2015-11-03T12:11:48+08:00 ] 117.175.88.49 /wechat/home?code=00114cdc6a4d546dea242c83714093ao&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+ERR: 0
+
+[ 2015-11-03T12:11:49+08:00 ] 182.140.184.88 /wechat/home?code=00144f27e1418c28981d40d89d3adedX&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+ERR: 0
+
+[ 2015-11-03T12:11:49+08:00 ] 117.175.88.49 /wechat/home/account/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-03T12:13:54+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=59658c765e6d8eb8fdc0a7a0cc9dfb5dd1f6150a&timestamp=1446523992&nonce=1944274964
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:13:55+08:00 ] 182.140.184.88 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+
+[ 2015-11-03T12:13:55+08:00 ] 182.140.184.88 /wechat/home?code=021d9b975174498b348226e474cb1435&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+ERR: 12
+
+[ 2015-11-03T12:13:59+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=d8c565f0b34d1511ff6aa90786e4b0acc3922e39&timestamp=1446523997&nonce=1215525425
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:13:59+08:00 ] 125.70.178.95 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+
+[ 2015-11-03T12:14:02+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=25413d3e1fb764c1a91033be57250f72ab2752f0&timestamp=1446523999&nonce=839026888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:14:02+08:00 ] 117.175.88.49 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+
+[ 2015-11-03T12:14:05+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=8749851c8a63df327bd3e2674e3abc61d9e41169&timestamp=1446524003&nonce=1655955363
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:14:06+08:00 ] 125.70.178.95 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+
+[ 2015-11-03T12:14:19+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=095dfcc9ef636eaef434aa39bd678c524120894a&timestamp=1446524017&nonce=70756609
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:14:20+08:00 ] 117.175.88.49 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+
+[ 2015-11-03T12:14:23+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=e6aec6cb1e14adbce6e32163ed00cdab7ea6a489&timestamp=1446524021&nonce=920342426
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-03T12:14:23+08:00 ] 125.70.178.95 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: oWXRLs_VUTPT0iwZHD4oFGnnrMKo
+
+[ 2015-11-03T12:15:04+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=bf5c79114a7c4771ab8478c0b3caf6f17805d41d&timestamp=1446524062&nonce=1791931931
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:05+08:00 ] 182.140.184.88 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:05+08:00 ] 182.140.184.88 /wechat/home?code=0318be69c794de28a2af376420e4fe30&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 0
+
+[ 2015-11-03T12:15:06+08:00 ] 182.140.184.88 /wechat/home?code=041df491b5638942fea70cc1ae2550bu&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 0
+
+[ 2015-11-03T12:15:06+08:00 ] 182.140.184.88 /wechat/home/account/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:09+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=8f9e949708009e0c4ae6ec6dae0acc0706c616e7&timestamp=1446524067&nonce=1972192937
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:09+08:00 ] 125.70.178.95 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:10+08:00 ] 182.140.184.88 /wechat/home?code=03139c1518b94cf53cd0e911d215cf2n&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 0
+
+[ 2015-11-03T12:15:10+08:00 ] 182.140.184.88 /wechat/home?code=0216ff9f2a0ac7f9e152d88c5bb35a4H&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 0
+
+[ 2015-11-03T12:15:11+08:00 ] 117.175.88.49 /wechat/home/account/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:23+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=61e481e57619a46f4987699b4b860e949b594fea&timestamp=1446524081&nonce=404958167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:24+08:00 ] 125.70.178.95 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:24+08:00 ] 125.70.178.95 /wechat/home?code=021f25ea7091cb2b7bdabaa14b25d803&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 0
+
+[ 2015-11-03T12:15:25+08:00 ] 182.140.184.88 /wechat/home?code=001f32ee03ad2acf14e999df71fd5309&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 0
+
+[ 2015-11-03T12:15:25+08:00 ] 117.175.88.49 /wechat/home/account/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:27+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=36da78501dae150c2c1b2fc3dff6acae48da5a05&timestamp=1446524085&nonce=1684678900
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:28+08:00 ] 125.70.178.95 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:28+08:00 ] 125.70.178.95 /wechat/home?code=041b950d902fbfb11d8bab0be5447d6x&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 0
+
+[ 2015-11-03T12:15:28+08:00 ] 182.140.184.88 /wechat/home?code=031de94982c07ac41fa3a46318635f6F&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 0
+
+[ 2015-11-03T12:15:29+08:00 ] 182.140.184.88 /wechat/home/account/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:40+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=bcf6620d163a21232bf1c2b456614d53c3ae76dd&timestamp=1446524098&nonce=275638488
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:41+08:00 ] 125.70.178.95 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:41+08:00 ] 182.140.184.88 /wechat/home?code=041f4660d5e53e710baae384764782cC&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 12
+
+[ 2015-11-03T12:15:41+08:00 ] 182.140.184.88 /wechat/home?code=0219d8e2ac84f68114b7441936a12eb7&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:45+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=b207bf0fcd9fe0e2774e1198c652523788713b50&timestamp=1446524103&nonce=778779972
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:45+08:00 ] 125.70.178.95 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:47+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=89195a9bea31f26f8fc83795c085e4b596fbd573&timestamp=1446524105&nonce=693108880
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:15:48+08:00 ] 182.140.184.88 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:50:45+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=4c19264d58586ee2ca908dd5142d9011f64669cc&timestamp=1446526203&nonce=1487395356
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:50:46+08:00 ] 182.140.184.88 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:50:49+08:00 ] 182.140.184.88 /wechat/home?code=011b032ab46c48dbcc62dce865883c6n&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 0
+
+[ 2015-11-03T12:50:50+08:00 ] 182.140.184.88 /wechat/home/account/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-03T12:51:02+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=14ede5b3da1d7996994e89f289a8e8e44b654628&timestamp=1446526220&nonce=78375169
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:51:02+08:00 ] 125.70.178.95 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:51:03+08:00 ] 182.140.184.88 /wechat/home?code=041cf6746eb5b865e6cb6b998b18e1bT&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 0
+
+[ 2015-11-03T12:51:03+08:00 ] 182.140.184.88 /wechat/home/account/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-03T12:51:08+08:00 ] 103.7.30.71 /wechat/home/wechat?signature=1fc771f77ed87ba960749e5d5f1c30c795c9ddd1&timestamp=1446526226&nonce=446262201
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:51:08+08:00 ] 125.70.178.95 /wechat/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-03T12:51:09+08:00 ] 117.175.88.49 /wechat/home?code=021e6cc5eb4a0dc098f7e6dcefe020e2&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 0
+
+[ 2015-11-03T12:51:09+08:00 ] 182.140.184.88 /wechat/home/account/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

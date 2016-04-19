@@ -1,0 +1,81 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+
+<div class="col-xs-12">
+    
+<div class="animated fadeInUp">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="text-danger">
+                <i class="fa fa-home"></i>&nbsp;门店信息
+                <include file="./Component/_return" />
+            </h4>
+        </div>
+        <div class="panel-body">
+            <form data-validation="true" method="POST" action="{:U('Store/detail')}"> 
+                <if condition="$error neq ''">
+                    <div class="alert alert-danger">
+                        {$error}
+                    </div>
+                </if>
+                <input type="hidden" value="{$storeInfo.id}" id="id" name="id">
+                <div class="form-group">
+                    <label for="">门店名称</label>
+                    <input type="text" check-type="required" required-message="请输入门店名称" value="{$storeInfo.name}" class="form-control" id="name" name="name" placeholder="请输入门店名称...">
+                </div>
+                <div class="form-group">
+                    <label for="">门店地址</label>
+                    <input type="text" check-type="required" required-message="请输入门店地址" value="{$storeInfo.address}" class="form-control" id="address" name="address" placeholder="请输入门店地址...">
+                </div>
+                <div class="form-group">
+                    <label for="">门店电话</label>
+                    <input type="text" check-type="required" required-message="请输入门店电话" value="{$storeInfo.phone}" class="form-control" id="phone" name="phone" placeholder="请输入门店电话...">
+                </div>
+                <div class="form-group">
+                    <label for="">店长名称</label>
+                    
+                    <empty name="adminList">
+                        <div class="text-danger">
+                            店长列表为空，请添加店长信息
+                        </div>
+                    <else /> 
+                        <select name="adminid" id="adminid" class="form-control" 
+                            data-change-target="#admin_phone" 
+                            data-change-value="phone">
+                            <option value="-1">— 请选择 —</option>
+                            <volist name="adminList" id="admin">
+                                <if condition="$admin.id eq $storeInfo['adminid']">
+                                    <option value="{$admin.id}" data-phone="{$admin.phone}" selected>
+                                <else/>
+                                    <option value="{$admin.id}" data-phone="{$admin.phone}">
+                                </if>
+                                    {$admin.realname} - {$admin.store_name|default='未关联门店'}
+                                </option>
+                            </volist>
+                        </select>
+                        <span class="help-block">
+                            注：选择已关联门店的店长，将会解除该店长与原有门店的关联。
+                        </span>
+                    </empty> 
+                </div>
+                <div class="form-group">
+                    <label for="">店长电话</label>
+                    <input type="text" id="admin_phone" value="" disabled class="form-control" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="">备注信息</label>
+                    <textarea class="form-control" id="descr" name="descr" placeholder="请输入门店备注信息..." rows="3">{$storeInfo.descr}</textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-success btn-submit">修改</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+</block>
+<block name="script">
+</block>

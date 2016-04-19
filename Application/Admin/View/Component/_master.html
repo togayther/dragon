@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="HandheldFriendly" content="True"/>
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	
+		<title>
+			<block name="title">{$Think.config.LOGO_TEXT}</block>
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/mcmurphy.min.css">  
+        
+		<block name="style"></block>
+		
+		<script>
+			document.onreadystatechange = onloadCompleted;
+			function onloadCompleted()
+			{
+			 	if(document.readyState == "complete")
+			    {
+			    	var preloader = document.getElementById("preloader");
+			    	if (preloader) {
+			    		var timer = setTimeout(function() {
+		                    preloader.style.display = "none";
+		                    clearTimeout(timer);
+		                }, 500);
+			    	};
+			    }
+			}
+		</script>
+		<!--[if lt IE 9]>
+	      <script src="__PUBLIC__/Admin/js/html5shiv.js"></script>
+	      <script src="__PUBLIC__/Admin/js/respond.min.js"></script>
+	    <![endif]-->
+		<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+	</head>
+	<body>
+		<div id="preloader">
+	        <span></span>
+	    </div>
+
+	    <include file="./Component/_header" />
+
+		<div class="container">
+			<div class="main">
+			    <div class="row">
+					<block name="body"></block>
+			    </div>
+		    </div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<p class="text-muted pull-left">
+					原野软件工作室&nbsp;
+					353066897
+				</p>
+			</div>
+		</div>
+
+        <script src="__PUBLIC__/Admin/js/mcmurphy.min.js?v=2.0"></script>   
+
+        <block name="script"></block>
+	</body>
+</html>
+

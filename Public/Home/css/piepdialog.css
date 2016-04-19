@@ -1,0 +1,162 @@
+
+.md-perspective, .md-perspective body {
+    height: 100%;
+    overflow: hidden
+}
+
+.md-perspective body {
+    background: #dedede;
+    -webkit-perspective: 600px;
+    perspective: 600px
+}
+
+.md-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 630px;
+    min-width: 300px;
+    height: auto;
+    z-index: 2000;
+    border-radius: 2px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+       transform: translateX(-50%) translateY(-50%)
+}
+
+.md-show {
+    display: block !important;
+    visibility:visible !important;
+}
+
+.md-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0.8;
+    background: rgba(66, 66, 66, 0.9);
+}
+
+.md-content {
+    color: #464545;
+    background: rgba(255,255,255,.8);
+    position: relative;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.md-content h3 {
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    background: transparent;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.md-content>div {
+    padding: 5px 15px 5px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.0em
+}
+
+.md-content>div p {
+    margin: 0;
+    color: #222;
+    line-height: 1.5em;
+    text-align: left;
+    font-size:14px;
+    padding-bottom:10px;
+}
+.md-content>div p small{
+    line-height: 1.3em;
+}
+
+.md-content>div p a {
+    font-size: 14px;
+    color:#222;
+}
+
+.md-content>.md-content-footer {
+    padding: 15px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.md-content>.md-content-footer>a {
+    cursor: pointer;
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: #dfba61;
+    font-size: 1.0rem;
+    padding: 8px 0px;
+    background: rgba(50, 50, 50, 0.9);
+    /*
+    -webkit-box-shadow: 1px 0px 0px #888;
+            box-shadow: 1px 0px 0px #888;
+    */
+    border-right:1px solid #f3f3f3;
+}
+
+.md-content>.md-content-footer>a.md-close-disabled{
+  /*background:rgba(30,30,42,0.9);*/
+}
+
+.md-content>.md-content-footer>a.btn-block {
+    width: 100%;
+    float: none;
+    border-radius:2px;
+}
+
+.md-content>.md-content-footer>a:hover,
+.md-content>.md-content-footer>a:active {
+    background: rgba(40, 40, 40, 0.9)
+}
+
+.md-content>.md-content-footer>a.border-none {
+    -webkit-box-shadow: none;
+            box-shadow: none
+}
+
+
+/* Effect : fall */
+.md-effect-fall.md-modal {
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+}
+
+.md-effect-fall .md-content {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(500px) rotateX(20deg); 
+    -ms-transform: translateZ(500px) rotateX(20deg); 
+    transform: translateZ(500px) rotateX(20deg); 
+    -webkit-box-shadow: none; 
+            box-shadow: none;
+    opacity: 0;
+}
+
+.md-show.md-effect-fall .md-content {
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+       transition: all 0.2s ease-in-out;
+    -webkit-transform: translateZ(0px) rotateX(0deg);
+    -ms-transform: translateZ(0px) rotateX(0deg);
+    transform: translateZ(0px) rotateX(0deg); 
+    opacity: 1;
+    -webkit-box-shadow: 0px 1px 2px 0px #666;
+            box-shadow: 0px 1px 2px 0px #666;
+}

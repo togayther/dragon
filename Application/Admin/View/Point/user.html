@@ -1,0 +1,45 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+<div class="col-xs-12">
+
+    <div class="animated fadeInUp">
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="text-danger">
+              <i class="fa fa-mobile"></i>&nbsp;{$userInfo.phone} <span class="badge">积分：{$userInfo.point}</span>
+
+              <include file="./Component/_return" />
+            </h4>
+          </div>
+          
+          <div class="panel-body">
+            <div class="list-group">
+
+              <volist name="pointList" id="point" empty="暂无积分记录">
+                 <div href="#" class="list-group-item"> 
+                    <h4 class="text-success">
+                      <i class="fa fa-long-arrow-up"></i>
+                      <span>{$point.point}<span>
+
+                      <a href="{:U('Point/detail')}?id={$point.id}" class="pull-right text-success tooltip-title" data-toggle="tooltip" data-placement="left" title="点击查看记录详情">
+                        <i class="fa fa-info-circle"></i>
+                      </a>
+                    </h4>
+                    
+                    <p>{$point.type}</p>
+                    <p>{$point.createdate}</p>
+                    <p>{$point.store_name|default='无门店信息'}</p>
+                </div>
+              </volist>
+            </div>
+          </div>
+
+        </div>
+    </div>
+</div>
+</block>
+<block name="script">
+</block>

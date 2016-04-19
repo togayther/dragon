@@ -1,0 +1,73 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+<div class="col-xs-12">
+	<div class="animated fadeInUp">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="text-danger">
+					<i class="fa fa-pencil-square-o"></i>&nbsp;积分审核
+				</h4>
+			</div>
+			<div class="panel-body">
+			<table class="table table-bordered table-hover" id="dataTable">
+				<thead>
+					<th>
+						手机号码
+					</th>
+					<th>
+						积分值
+					</th>
+					<th>
+						积分类型
+					</th>
+					<th>
+						当前等级
+					</th>
+					<th>
+						申请门店
+					</th>
+					<th>
+						门店店长
+					</th>
+					<th>
+						申请时间
+					</th>
+					<th data-sort-enabled="false" data-search-enabled="false">
+					</th>
+				</thead>
+				<tbody>
+					<volist name="auditList" id="audit">
+			             <tr>
+							<td>
+								<a href="{:U('User/detail')}?id={$audit.userid}" class="text-danger tooltip-title" data-toggle="tooltip" data-placement="right" title="点击查看用户详情">
+									{$audit.user_phone}
+								</a>
+							</td>
+							<td>{$audit.point}</td>
+							<td>{$audit.type}</td>
+							<td>{$audit.user_level_name}</td>
+							<td>
+								<a href="{:U('Store/detail')}?id={$audit.store_id}" class="text-danger tooltip-title" data-toggle="tooltip" data-placement="right" title="点击查看门店详情">
+									{$audit.store_name}
+								</a>
+							</td>
+							<td>{$audit.manager_realname}</td>
+							<td>{$audit.createdate}/td>
+							<td class="text-center">
+								<a href="{:U('Audit/detail')}?id={$audit.id}" class="tooltip-title" data-toggle="tooltip" data-placement="left" title="审核">
+									<i class="fa fa-pencil"></i>
+								</a>
+							</td>
+						</tr>
+			        </volist>
+				</tbody>
+			</table>
+			</div>
+		</div>
+	</div>
+</div>
+</block>
+<block name="script">
+</block>

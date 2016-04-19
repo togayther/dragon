@@ -1,0 +1,131 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+<div class="col-xs-12">
+    <div class="animated fadeInUp">
+        <div>
+            <ul class="nav nav-tabs" role="tablist">
+                <li>
+                    <a href="javascript:void(0);">
+                    <i class="fa fa-mobile"></i>
+                    &nbsp;
+                    {$auditInfo.user_phone}
+                    &nbsp;
+                    <span class="badge">{$auditInfo.user_point}积分</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#shenhe" data-toggle="tab">
+                    审核信息
+                    </a>
+                </li>
+                <li>
+                    <a href="#shenqing" data-toggle="tab">
+                    申请信息
+                    </a>
+                </li>
+                 <li class="pull-right">
+                     <a href="javascript:history.go(-1);" 
+                        class="tooltip-title" 
+                        data-toggle="tooltip" 
+                        data-placement="left" title="返回">
+                        <i class="fa fa-mail-reply"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="shenhe">
+                    <div class="padding-lg">
+                    <form data-validation="true" method="POST" action="{:U('Audit/detail')}">
+                        <input type="hidden" name="id" id="id" value="{$auditInfo.id}"/>
+                        <input type="hidden" name="point" id="point" value="{$auditInfo.point}"/>
+                        <input type="hidden" name="userid" id="userid" value="{$auditInfo.userid}"/>
+                        <div class="form-group">
+                            <label for="">审核状态</label>
+                            <p>
+                               <input type="checkbox" class="switch-input"
+                                    name ="status"
+                                    id = "status"
+                                    checked="checked" 
+                                    data-size="small"
+                                    data-on-text="通过" 
+                                    data-off-text="不通过"
+                                    data-on-color="success" 
+                                    data-off-color="danger"/>
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <label for="">审核备注</label>
+                            <textarea class="form-control" id="authdescr" placeholder="" rows="3" name="authdescr"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-submit">提交</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="shenqing">
+                    <div class="">
+                        <form>
+                            <div class="form-group">
+                                <label for="">积分值</label>
+                                <input type="text" class="form-control" disabled value="{$auditInfo.point}">
+                            </div>
+                            <div class="form-group">
+                                <label for="">积分类型</label>
+                                <input type="text" class="form-control" disabled value="{$auditInfo.type}">
+                            </div>
+                            <div class="form-group">
+                                <label for="">申请时间</label>
+                                <input type="text" class="form-control" disabled value="{$auditInfo.createdate}">
+                            </div>
+                            <div class="form-group">
+                                <label for="">申请附件</label>
+                                <div class="row">
+                                    
+                                 <?php
+                                    $attachs = explodeAttach($auditInfo["attach"], '|');
+                                 ?>
+                        
+                                  <volist name="attachs" id="attach">
+                                     <div class="col-xs-6 col-md-2">
+                                        <a href="__PUBLIC__/{$attach}" class="thumbnail" target="_blank">
+                                          <img src="__PUBLIC__/{$attach}" alt="">
+                                        </a>
+                                      </div>
+                                  </volist>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    申请门店
+                                    <a href="{:U('Admin/detail')}?id={$auditInfo.store_id}"  class="tooltip-title" data-toggle="tooltip" data-placement="right" title="点击查看门店详情">
+                                    <i class="fa fa-info-circle"></i>
+                                    </a>
+                                </label>
+                                <input type="text" class="form-control" disabled value="{$auditInfo.store_name}">
+                            </div>
+                            <div class="form-group">
+                                <label for="">
+                                    申请店长
+                                    <a href="{:U('Admin/detail')}?id={$auditInfo.manager_id}"  class="tooltip-title" data-toggle="tooltip" data-placement="right" title="点击查看店长详情">
+                                    <i class="fa fa-info-circle"></i>
+                                    </a>
+                                </label>
+                                <input type="text" class="form-control" disabled value="{$auditInfo.manager_realname}">
+                            </div>
+                            <div class="form-group">
+                                <label for="">申请备注</label>
+                                <textarea class="form-control" id="" placeholder="" rows="3" disabled>{$auditInfo.descr}</textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</block>
+<block name="script">
+</block>

@@ -1,0 +1,53 @@
+<extend name="./Component/_master" />
+<block name="style">
+</block>
+<block name="body">
+
+<include file="./Component/_search" addpath="{:U('Level/add')}"/>
+
+<div class="col-xs-12">
+    <div class="animated fadeInUp">
+
+        <volist name="levelList" id="level" empty="暂无等级信息">
+
+          <if condition="$level.id gt 0">
+            <div class="list-group">
+              <div href="{:U('Store/index')}" class="list-group-item title">
+                <span class="text-primary">
+                  <i class="fa fa-flag"></i>
+                  {$level.name}
+                </span>
+
+                <include file="./Component/_godetail" detailpath="{:U('Level/detail')}?id={$level.id}"/>
+              </div>
+              <div class="list-group-item">
+                <div class="rangeSelector" 
+                  data-type="double"
+                  data-disable="false" 
+                  data-from-fixed="true"
+                  data-to-fixed="true"
+                  data-max="{$Think.config.LEVEL_MAX_POINT}"
+                  data-min="-0"
+                  data-step="10"
+                  data-grid="true"
+                  data-postfix="分"
+                  data-from="{$level.point_begin}" 
+                  data-to="{$level.point_end}"></div>
+              </div>
+              <div class="list-group-item">
+                  备注信息：{$level.descr|default='空'}
+              </div>
+              <div class="list-group-item">
+                  当前用户：<span class="badge">{$level.user_count}</span>
+                  <a href="{:U('Level/user')}?id={$level.id}" class="pull-right tooltip-title" data-toggle="tooltip" data-placement="left" title="点击查看会员列表">
+                     <i class="fa fa-arrow-circle-right"></i>
+                  </a>
+              </div>
+            </div>
+          </if>
+        </volist>
+    </div>
+</div>
+</block>
+<block name="script">
+</block>

@@ -1,0 +1,235 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: verdana, 'microsoft yahei';
+    height: 100%;
+    overflow: hidden;
+    color: #444;
+    background-color: #fcfcfc;
+    margin-bottom: 40px;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #f5f5f5;
+}
+
+.footer p{
+    line-height: 40px;
+    margin:0px;
+    padding:0px;
+}
+
+a.text-danger {
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+a.text-danger:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #b94a48;
+}
+
+.navbar-default {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: #eee;
+    box-shadow: 0px 1px 1px #bbb;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #f2f2f2;
+}
+
+.navbar-default .navbar-nav > li > a > i {
+    line-height: 100%;
+}
+
+.blank0, .blank5, .blank10, .blank20, .blank50 {
+    display: block;
+    clear: both;
+}
+
+.blank0 {
+    height: 0px;
+}
+
+.blank5 {
+    height: 5px;
+}
+
+.blank10 {
+    height: 10px;
+}
+
+.blank20 {
+    height: 20px;
+}
+
+.blank50 {
+    height: 50px;
+}
+
+.tab-pane {
+    padding: 20px 5px;
+}
+
+#duang-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #f85f4e;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#login-panel {
+    background: #fff;
+    margin: 0px 50px;
+    padding: 50px;
+    margin-top: 30%;
+    opacity: 0.9;
+    box-shadow: 0px 1px 1px 0px #444;
+    border-radius: 10px;
+}
+
+#login-panel #logo {
+    display: block;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+#login-panel .form-group {
+    margin-bottom: 30px;
+}
+
+.dowebok {
+    margin: 0 auto;
+}
+
+.main {
+    margin: 60px 10px 10px;
+    transition: margin-left .3s ease;
+}
+
+.table {
+    border: 1px solid #eee;
+    border-bottom: 1px solid #eee !important;
+}
+
+.table > thead > tr > th {
+    color: rgb(103, 106, 108);
+    border: 1px solid #eee;
+    border-bottom-width: 0px;
+}
+
+.table > tbody > tr > td {
+    color: rgb(103, 106, 108);
+    border: 1px solid #eee;
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 4px 10px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #666;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    cursor: default;
+    color: #ffffff;
+    background-color: #f85f4e;
+    border-color: #f85f4e;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.btn {
+    padding: 8px 30px;
+}
+
+#scrollUp {
+    background-image: url("../img/top.png");
+    bottom: 20px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: rgba(20,20,20,0.2);
+}
+
+#scrollUp:hover {
+    opacity: 0.8;
+}
+
+#btn-search{
+    cursor: pointer;
+}
+
+.badge {
+    background-color: #d9230f !important;
+    float: none !important;
+}
+
+.list-group-item:hover, .list-group-item:active {
+    background: transparent;
+}
+
+.list-group-item.title {
+    background-color: #f2f2f2 !important;
+}
+
+a.btnImageRemove {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+a.thumbnail {
+    border-radius: 0 !important;
+}
+
+div.thumbnailItem:hover a.thumbnail>img {
+    opacity: 0.5;
+    -webkit-filter: grayscale(1);
+}
+
+div.thumbnailItem:hover a.btnImageRemove {
+    display: block;
+}

@@ -1,0 +1,1104 @@
+[ 2015-11-09T09:54:08+08:00 ] 116.22.163.243 /wechat/Admin/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:54:45+08:00 ] 116.22.163.243 /wechat/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'admin' AND admin.password = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-09 09:54:45' WHERE admin.name = 'admin' AND admin.password = 'admin' [ RunTime:0.0156s ]
+
+[ 2015-11-09T09:54:45+08:00 ] 116.22.163.243 /wechat/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:54:54+08:00 ] 116.22.163.243 /wechat/admin/audit/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:55:08+08:00 ] 116.22.163.243 /wechat/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SELECT user.id AS id,user.phone AS phone,user.point AS point,user.lastlogin AS lastlogin,user.descr AS descr,user.createdate AS createdate,level.id AS level_id,level.name AS level_name FROM tp_user user LEFT JOIN tp_level level ON user.level = level.id WHERE `enabled` = 1 ORDER BY user.level desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:55:19+08:00 ] 116.22.163.243 /wechat/admin/level/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SELECT level.id AS id,level.name AS name,level.descr AS descr,level.point_begin AS point_begin,level.point_end AS point_end,COUNT(user.id) AS user_count FROM tp_level level LEFT JOIN tp_user user ON level.id = user.level WHERE `deleted` = 0 GROUP BY level.id ORDER BY level.point_end asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:55:42+08:00 ] 116.22.163.243 /wechat/admin/level/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SELECT level.id AS id,level.name AS name,level.descr AS descr,level.point_begin AS point_begin,level.point_end AS point_end,COUNT(user.id) AS user_count FROM tp_level level LEFT JOIN tp_user user ON level.id = user.level WHERE `deleted` = 0 GROUP BY level.id ORDER BY level.point_end asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:55:44+08:00 ] 116.22.163.243 /wechat/admin/store/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SELECT store.id AS id,store.name AS name,store.address AS address,store.phone AS phone,store.email AS email,store.descr AS descr,store.createtime AS createtime,store.updatetime AS updatetime,admin.realname AS admin_realname,admin.phone AS admin_phone,admin.email AS admin_email,admin.lastlogin AS admin_lastlogin,admin.id AS admin_id FROM tp_store store LEFT JOIN tp_admin admin ON store.adminid = admin.id WHERE store.deleted = 0 ORDER BY createdate desc  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:56:03+08:00 ] 116.22.163.243 /wechat/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SELECT user.id AS id,user.phone AS phone,user.point AS point,user.lastlogin AS lastlogin,user.descr AS descr,user.createdate AS createdate,level.id AS level_id,level.name AS level_name FROM tp_user user LEFT JOIN tp_level level ON user.level = level.id WHERE `enabled` = 1 ORDER BY user.level desc  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:56:07+08:00 ] 116.22.163.243 /wechat/admin/store/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SELECT store.id AS id,store.name AS name,store.address AS address,store.phone AS phone,store.email AS email,store.descr AS descr,store.createtime AS createtime,store.updatetime AS updatetime,admin.realname AS admin_realname,admin.phone AS admin_phone,admin.email AS admin_email,admin.lastlogin AS admin_lastlogin,admin.id AS admin_id FROM tp_store store LEFT JOIN tp_admin admin ON store.adminid = admin.id WHERE store.deleted = 0 ORDER BY createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:56:08+08:00 ] 116.22.163.243 /wechat/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0000s ]
+SQL: SELECT user.id AS id,user.phone AS phone,user.point AS point,user.lastlogin AS lastlogin,user.descr AS descr,user.createdate AS createdate,level.id AS level_id,level.name AS level_name FROM tp_user user LEFT JOIN tp_level level ON user.level = level.id WHERE `enabled` = 1 ORDER BY user.level desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:56:10+08:00 ] 116.22.163.243 /wechat/Admin/Auth/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:56:12+08:00 ] 116.22.163.243 /wechat/Admin/User/Point.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SELECT user.id AS id,user.phone AS phone,user.avatar AS avatar,user.point AS point,user.name AS name,user.createdate AS createdate,user.lastlogin AS lastlogin,user.descr AS descr,user.useragent AS useragent,user.openid AS openid,level.id AS level_id,level.name AS level_name FROM tp_user user LEFT JOIN tp_level level ON user.level = level.id WHERE user.id = '3' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: result D:\website\wechat\Application\Admin\Controller\UserController.class.php 第 65 行.
+NOTIC: [8] Undefined variable: result D:\website\wechat\Application\Admin\Controller\UserController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: adminId D:\website\wechat\Application\Runtime\Cache\Admin\11aeb9265b4edddd954c7d15cee4f6a3.php 第 162 行.
+NOTIC: [8] Undefined index: point D:\website\wechat\Application\Runtime\Cache\Admin\11aeb9265b4edddd954c7d15cee4f6a3.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:56:22+08:00 ] 116.22.163.243 /wechat/admin/admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE `enabled` = 1 AND admin.groupid = 2 ORDER BY admin.lastlogin desc  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:56:29+08:00 ] 116.22.163.243 /wechat/Admin/Admin/detail.html?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.id = '6' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: result D:\website\wechat\Application\Admin\Controller\AdminController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: result D:\website\wechat\Application\Admin\Controller\AdminController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:56:37+08:00 ] 116.22.163.243 /wechat/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'admin' AND admin.password = 'admin' LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-09 09:56:37' WHERE admin.name = 'admin' AND admin.password = 'admin' [ RunTime:0.0000s ]
+
+[ 2015-11-09T09:56:39+08:00 ] 116.22.163.243 /wechat/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:56:47+08:00 ] 116.22.163.243 /wechat/admin/admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE `enabled` = 1 AND admin.groupid = 2 ORDER BY admin.lastlogin desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:56:48+08:00 ] 116.22.163.243 /wechat/admin/activity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_activity` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_activity` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SELECT activity.id AS id,activity.name AS name,activity.point AS point,activity.createdate AS createdate,activity.startdate AS startdate,activity.enddate AS enddate,activity.descr AS descr,activity.pic AS pic,activity.storeid AS storeid,store.name AS store_name,store.phone AS store_phone,store.address AS store_address,admin.id AS store_admin_id,admin.realname AS store_admin_realname,admin.phone AS store_admin_phone,admin.lastlogin AS store_admin_lastlogin FROM tp_activity activity LEFT JOIN tp_store store ON activity.storeid = store.id LEFT JOIN tp_admin admin ON store.adminid = admin.id ORDER BY activity.createdate desc  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:57:03+08:00 ] 116.22.163.243 /wechat/admin/audit/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:57:12+08:00 ] 116.22.163.243 /wechat/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SELECT user.id AS id,user.phone AS phone,user.point AS point,user.lastlogin AS lastlogin,user.descr AS descr,user.createdate AS createdate,level.id AS level_id,level.name AS level_name FROM tp_user user LEFT JOIN tp_level level ON user.level = level.id WHERE `enabled` = 1 ORDER BY user.level desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:57:14+08:00 ] 116.22.163.243 /wechat/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0000s ]
+SQL: SELECT user.id AS id,user.phone AS phone,user.point AS point,user.lastlogin AS lastlogin,user.descr AS descr,user.createdate AS createdate,level.id AS level_id,level.name AS level_name FROM tp_user user LEFT JOIN tp_level level ON user.level = level.id WHERE `enabled` = 1 ORDER BY user.level desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:57:27+08:00 ] 116.22.163.243 /wechat/admin/image/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:57:32+08:00 ] 116.22.163.243 /wechat/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:57:34+08:00 ] 116.22.163.243 /wechat/admin/level/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SELECT level.id AS id,level.name AS name,level.descr AS descr,level.point_begin AS point_begin,level.point_end AS point_end,COUNT(user.id) AS user_count FROM tp_level level LEFT JOIN tp_user user ON level.id = user.level WHERE `deleted` = 0 GROUP BY level.id ORDER BY level.point_end asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:57:35+08:00 ] 116.22.163.243 /wechat/admin/level/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SELECT level.id AS id,level.name AS name,level.descr AS descr,level.point_begin AS point_begin,level.point_end AS point_end,COUNT(user.id) AS user_count FROM tp_level level LEFT JOIN tp_user user ON level.id = user.level WHERE `deleted` = 0 GROUP BY level.id ORDER BY level.point_end asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:57:39+08:00 ] 116.22.163.243 /wechat/Admin/Admin/detail.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.id = '1' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: result D:\website\wechat\Application\Admin\Controller\AdminController.class.php 第 32 行.
+NOTIC: [8] Undefined variable: result D:\website\wechat\Application\Admin\Controller\AdminController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:57:46+08:00 ] 116.22.163.243 /wechat/admin/admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE `enabled` = 1 AND admin.groupid = 2 ORDER BY admin.lastlogin desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:57:59+08:00 ] 116.22.163.243 /wechat/admin/activity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_activity` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_activity` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SELECT activity.id AS id,activity.name AS name,activity.point AS point,activity.createdate AS createdate,activity.startdate AS startdate,activity.enddate AS enddate,activity.descr AS descr,activity.pic AS pic,activity.storeid AS storeid,store.name AS store_name,store.phone AS store_phone,store.address AS store_address,admin.id AS store_admin_id,admin.realname AS store_admin_realname,admin.phone AS store_admin_phone,admin.lastlogin AS store_admin_lastlogin FROM tp_activity activity LEFT JOIN tp_store store ON activity.storeid = store.id LEFT JOIN tp_admin admin ON store.adminid = admin.id ORDER BY activity.createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:58:00+08:00 ] 116.22.163.243 /wechat/admin/audit/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:58:02+08:00 ] 116.22.163.243 /wechat/admin/level/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SELECT level.id AS id,level.name AS name,level.descr AS descr,level.point_begin AS point_begin,level.point_end AS point_end,COUNT(user.id) AS user_count FROM tp_level level LEFT JOIN tp_user user ON level.id = user.level WHERE `deleted` = 0 GROUP BY level.id ORDER BY level.point_end asc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:58:02+08:00 ] 116.22.163.243 /wechat/admin/audit/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0313s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T09:58:13+08:00 ] 116.22.163.243 /wechat/admin/activity/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_activity` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_activity` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SELECT activity.id AS id,activity.name AS name,activity.point AS point,activity.createdate AS createdate,activity.startdate AS startdate,activity.enddate AS enddate,activity.descr AS descr,activity.pic AS pic,activity.storeid AS storeid,store.name AS store_name,store.phone AS store_phone,store.address AS store_address,admin.id AS store_admin_id,admin.realname AS store_admin_realname,admin.phone AS store_admin_phone,admin.lastlogin AS store_admin_lastlogin FROM tp_activity activity LEFT JOIN tp_store store ON activity.storeid = store.id LEFT JOIN tp_admin admin ON store.adminid = admin.id ORDER BY activity.createdate desc  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T09:58:17+08:00 ] 116.22.163.243 /wechat/admin/audit/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T10:02:54+08:00 ] 116.22.163.243 /wechat/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SELECT user.id AS id,user.phone AS phone,user.point AS point,user.lastlogin AS lastlogin,user.descr AS descr,user.createdate AS createdate,level.id AS level_id,level.name AS level_name FROM tp_user user LEFT JOIN tp_level level ON user.level = level.id WHERE `enabled` = 1 ORDER BY user.level desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T10:08:08+08:00 ] 116.22.163.243 /wechat/Admin/User/detail.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0000s ]
+SQL: SELECT user.id AS id,user.phone AS phone,user.avatar AS avatar,user.point AS point,user.name AS name,user.createdate AS createdate,user.lastlogin AS lastlogin,user.descr AS descr,user.useragent AS useragent,user.openid AS openid,level.id AS level_id,level.name AS level_name FROM tp_user user LEFT JOIN tp_level level ON user.level = level.id WHERE user.id = '3' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: result D:\website\wechat\Application\Admin\Controller\UserController.class.php 第 82 行.
+NOTIC: [8] Undefined variable: result D:\website\wechat\Application\Admin\Controller\UserController.class.php 第 83 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T10:08:21+08:00 ] 116.22.163.243 /wechat/admin/user/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0000s ]
+SQL: SELECT user.id AS id,user.phone AS phone,user.point AS point,user.lastlogin AS lastlogin,user.descr AS descr,user.createdate AS createdate,level.id AS level_id,level.name AS level_name FROM tp_user user LEFT JOIN tp_level level ON user.level = level.id WHERE `enabled` = 1 ORDER BY user.level desc  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T10:08:23+08:00 ] 116.22.163.243 /wechat/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0000s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T10:22:26+08:00 ] 116.22.163.243 /wechat/admin/audit/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T10:33:43+08:00 ] 116.22.163.243 /wechat/Admin/Auth/index.html.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-11-09T10:33:46+08:00 ] 116.22.163.243 /wechat/Admin/auth/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0156s ]
+SQL: SELECT admin.id AS id,admin.name AS name,admin.password AS password,admin.phone AS phone,admin.email AS email,admin.birthday AS birthday,admin.gender AS gender,admin.realname AS realname,admin.groupid AS groupid,admin.lastlogin AS lastlogin,admin.descr AS descr,store.id AS store_id,store.name AS store_name,store.address AS store_address,store.phone AS store_phone,store.email AS store_email FROM tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id WHERE admin.name = 'admin' AND admin.password = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE tp_admin admin LEFT JOIN tp_store store ON admin.storeid = store.id SET `lastlogin`='2015-11-09 10:33:46' WHERE admin.name = 'admin' AND admin.password = 'admin' [ RunTime:0.0156s ]
+
+[ 2015-11-09T10:33:47+08:00 ] 116.22.163.243 /wechat/admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-11-09T10:33:49+08:00 ] 116.22.163.243 /wechat/admin/audit/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_user_point` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_level` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_admin` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `tp_store` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_user_point_audit` [ RunTime:0.0156s ]
+SQL: SELECT user_point.id AS id,user_point.type AS type,user_point.point AS point,user_point.userid AS userid,user_point.descr AS descr,user_point.attach AS attach,user_point.createdate AS createdate,user.phone AS user_phone,user.point AS user_point,user.descr AS user_descr,level.id AS user_level_id,level.name AS user_level_name,admin.id AS manager_id,admin.realname AS manager_realname,admin.phone AS manager_phone,store.id AS store_id,store.name AS store_name,store.address AS store_address FROM tp_user_point user_point LEFT JOIN tp_user user ON user_point.userid = user.id  JOIN tp_level level ON user.level = level.id  JOIN tp_admin admin ON admin.id = user_point.manager  JOIN tp_store store ON admin.storeid = store.id  JOIN tp_user_point_audit user_point_audit ON user_point_audit.pointid = user_point.id WHERE user_point.status = 0 ORDER BY user_point.createdate desc  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.156250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.156250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+

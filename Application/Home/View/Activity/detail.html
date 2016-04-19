@@ -1,0 +1,32 @@
+<extend name="./Component/_master" />
+<block name="title">
+    活动详情
+</block>
+<block name="style">
+	<style type="text/css">
+		body{
+			background-color: #fff;
+		}
+	</style>
+</block>
+<block name="body">
+<div class="animated">
+
+    <empty name="activityInfo">
+        <div class="data-empty">
+          暂无活动信息
+        </div>
+    <else />
+        <div class="well well-activity">
+            <h5>
+              {$activityInfo.name}
+            </h5>
+            <p>
+               {$activityInfo.content|html_entity_decode}
+            </p>
+        </div>
+    </empty>
+</div>
+</block>
+<block name="script">
+</block>
